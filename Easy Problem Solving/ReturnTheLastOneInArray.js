@@ -9,3 +9,15 @@ Array.prototype.last = function(){
 
 const Myarr = [1,2,3,4]
 console.log(Myarr.last())
+
+
+
+
+
+//Its optimize Way 
+Array.prototype.last = function(){
+    return this.length===0? this.length -1 : this[this.length -1]
+}
+const Myarr2 = [1,2,3,4,5,6]
+//const Myarr2 = [] //If that Array is empty then it will return us -1
+console.log(Myarr2.last())
