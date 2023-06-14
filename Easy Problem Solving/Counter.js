@@ -15,3 +15,19 @@ const Mycounter = Myfunction(10)
 console.log(Mycounter());
 console.log(Mycounter());
 console.log(Mycounter());
+
+
+//optimized version:
+
+const MyoptimizedFuncion = (n) =>{
+let countnumber = n;
+ 
+const incrementfunction = () =>{
+   return countnumber++
+}
+return incrementfunction
+}
+const numbers = MyoptimizedFuncion(20)
+console.log(numbers());
+console.log(numbers());
+console.log(numbers());
