@@ -21,3 +21,12 @@ Array.prototype.last = function(){
 const Myarr2 = [1,2,3,4,5,6]
 //const Myarr2 = [] //If that Array is empty then it will return us -1
 console.log(Myarr2.last())
+
+// ----------------------------------------------------------------------------------------
+const LastonefromArray = (arr) =>{
+ return arr.length ===0? arr.length -1 : arr[arr.length -1]
+}
+
+const Myarry = ['Number1','Number2','Number3','Number4','Number5']
+console.log(LastonefromArray(Myarry))
+
