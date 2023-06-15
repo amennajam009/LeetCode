@@ -31,3 +31,15 @@ const numbers = MyoptimizedFuncion(20)
 console.log(numbers());
 console.log(numbers());
 console.log(numbers());
+
+
+//Another Optimized Way
+
+const MyotherFunction = (value) =>{
+ let currentValue = value
+ return{
+   increment:()=> ++currentValue
+ }
+}
+const countervalue = MyotherFunction(20)
+console.log(countervalue.increment())
