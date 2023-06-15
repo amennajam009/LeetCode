@@ -13,6 +13,8 @@ console.log(Myarr.last())
 
 
 
+
+
 //Its optimize Way 
 Array.prototype.last = function(){
     return this.length===0? this.length -1 : this[this.length -1]
@@ -21,11 +23,20 @@ const Myarr2 = [1,2,3,4,5,6]
 //const Myarr2 = [] //If that Array is empty then it will return us -1
 console.log(Myarr2.last())
 
-// ----------------------------------------------------------------------------------------
-//If i want to call the last one from the normal function
-const LastonefromArray = (arr) =>{
- return arr.length ===0? arr.length -1 : arr[arr.length -1]
-}
-const Myarry = ['Number1','Number2','Number3','Number4','Number5']
-console.log(LastonefromArray(Myarry))
 
+
+//Now what if i want to call the last one from array with simple function 
+
+const Myfunction = (arr) =>{
+    return arr.length===0 ? arr.length -1 : arr[arr.length -1]
+}
+const Myarr3 = [1,2,3,4,5,6,7]
+console.log(Myfunction(Myarr3))
+
+//Again Pratice 
+
+const MyotherFunction = (arr) =>{
+   return arr.length===0 ? arr.length -1 : arr[arr.length -1]
+}
+const MyArr2 = ['number1' , 'number2' , 'number3' , 'number4']
+console.log(MyotherFunction(MyArr2))
