@@ -36,7 +36,7 @@ console.log(Myfunction(Myarr3))
 //Again Pratice 
 
 const MyotherFunction = (arr) =>{
-   return arr.length===0 ? arr.length -1 : arr[arr.length -1]
+   return arr.length===0 ? arr.length -1  : arr[arr.length -1]
 }
 const MyArr2 = ['number1' , 'number2' , 'number3' , 'number4']
 console.log(MyotherFunction(MyArr2))
@@ -46,8 +46,7 @@ console.log(MyotherFunction(MyArr2))
 // Promt function that if i enter the Array of number so it should return me the last index of array otherwise if i pass the empty array so it should return me -1
 
 const Myfunction2 = () =>{
-    let Givennumber = prompt('Enter Your Number Array');
-    Givennumber = Givennumber.toString()
+    let Givennumber =prompt('Enter Your Number').toString();
     return Givennumber.length===0?Givennumber.length -1 : Givennumber[Givennumber.length -1];
 }
 console.log(Myfunction2())
